@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "taro-scan-wx",
+  "appid": "wxc20649b33772b15e",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}

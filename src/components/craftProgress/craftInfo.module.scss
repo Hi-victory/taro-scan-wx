@@ -1,0 +1,114 @@
+.box {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  .left {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .editTip {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 200;
+      width: 40px;
+      height: 12px;
+      line-height: 12px;
+      color: #f0f7ff;
+      font-size: 10px;
+      font-weight: 510;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d9d9d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.isOverdue {
+    border: 2px solid #ffafb0;
+  }
+  &.isFinish {
+    border: 2px solid #32bc24;
+  }
+  .circleIcon {
+    width: 21px;
+    height: 21px;
+  }
+}
+.craftInfo {
+  padding-left: 8px;
+  .craftNameBox {
+    display: flex;
+    align-items: center;
+  }
+  .craftName {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 75px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+  }
+  .overdue {
+    color: #ff4d4f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-left: 4px;
+    border-radius: 2px;
+    border: 0.5px solid #ff4d4f;
+    padding: 2px;
+  }
+  .progress {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 95px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+  }
+}
+.timerBox {
+  &:first-child {
+    padding-bottom: 4px;
+  }
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+  font-weight: 400;
+  .name {
+    border-radius: 2px;
+    border: 0.5px solid rgba(0, 0, 0, 0.45);
+    padding: 2px;
+    line-height: 12px;
+    margin-right: 4px;
+  }
+  .timer {
+    width: 73px;
+    height: 17px;
+  }
+  .line {
+    padding: 0 4px;
+  }
+  .endTimer {
+    color: rgba(0, 0, 0, 0.85);
+  }
+  .timerBg {
+    background: #f0f0f0;
+  }
+}

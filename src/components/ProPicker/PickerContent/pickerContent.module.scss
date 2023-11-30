@@ -1,0 +1,46 @@
+.mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10005;
+}
+.content {
+  background: #ffffff;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10002;
+  .searchBox {
+    padding: 12px;
+    box-shadow: inset 0px -1px 0px #eeeeee;
+    > View {
+      width: 100%;
+    }
+  }
+  .menus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    .label {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #141414;
+      max-width: 200px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+      white-space: nowrap;
+    }
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

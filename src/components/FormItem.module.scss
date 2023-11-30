@@ -1,0 +1,52 @@
+.formItem {
+  display: flex;
+  min-height: 46px;
+  padding: 8px 16px;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  &.disabled {
+    opacity: 0.4;
+  }
+  .labelWrap {
+    color: #141414;
+    font-size: 14px;
+    width: 110px;
+    position: relative;
+    flex: none;
+    .star {
+      color: #ff4c47;
+      position: absolute;
+      left: -8px;
+      top: 0px;
+    }
+  }
+  .content {
+    color: #141414;
+    font-size: 14px;
+    flex: auto;
+    > Input {
+      min-height: 28px;
+    }
+    &.paddingRight {
+      padding-right: 16px;
+    }
+    .errorText {
+      font-size: 12px;
+      line-height: 20px;
+      color: #ff4c47;
+    }
+  }
+  .icon {
+    flex: none;
+    width: 48px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Image {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

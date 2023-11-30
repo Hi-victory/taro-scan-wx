@@ -1,0 +1,19 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "taro-scan-wx",
+  "description": "scan-wx",
+  "appid": "wxc20649b33772b15e",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false,
+    "useCompilerPlugins": [
+      "typescript",
+      "less"
+    ]
+  },
+  "compileType": "miniprogram"
+}

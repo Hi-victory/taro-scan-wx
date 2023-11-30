@@ -1,0 +1,38 @@
+.dateBox {
+  :global {
+    .taroify-picker__toolbar {
+      height: 46px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .taroify-picker__cancel,
+    .taroify-picker__confirm {
+      font-size: 14px;
+      color: #3370ff;
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .taroify-picker__cancel {
+      color: #141414;
+    }
+    .taroify-picker__title {
+      font-size: 16px;
+      color: #141414;
+      font-weight: 700;
+      line-height: 24px;
+    }
+    .taroify-picker {
+      > View:nth-child(2) {
+        display: none;
+      }
+    }
+    .taroify-picker__columns {
+      .taroify-picker-option {
+        font-size: 14px;
+      }
+      .taroify-picker__frame {
+        left: 12px;
+        right: 12px;
+      }
+    }
+  }
+}

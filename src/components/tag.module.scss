@@ -1,0 +1,24 @@
+.tag {
+  padding: 0px 8px;
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 2px;
+  border: 1px solid #dee0e3;
+  background: #fafafa;
+  color: #1f2329;
+  &.error {
+    border: 1px solid #ffa39e;
+    background: #fff1f0;
+    color: #f5222d;
+  }
+  &.warning {
+    border: 1px solid #ffe880;
+    background: #fffce6;
+    color: #ffb906;
+  }
+  &.processing {
+    border: 1px solid #adceff;
+    background: #f0f7ff;
+    color: #3370ff;
+  }
+}

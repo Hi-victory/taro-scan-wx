@@ -1,0 +1,16 @@
+.box {
+  position: relative;
+  z-index: 1000;
+  .inputBox {
+    padding-right: 20px;
+  }
+  .close {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+  }
+}

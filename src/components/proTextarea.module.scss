@@ -1,0 +1,19 @@
+.textareaBox {
+  display: flex;
+  flex-direction: column;
+  .textarea {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #141414;
+    width: 100%;
+    min-height: 48px;
+  }
+  .count {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #bfbfbf;
+    text-align: right;
+  }
+}

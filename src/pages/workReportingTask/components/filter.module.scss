@@ -1,0 +1,124 @@
+.tabs {
+  height: 38px;
+  border-bottom: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+  background: #fff;
+  display: flex;
+  padding: 0 16px;
+  position: relative;
+  z-index: 10005;
+  overflow: auto;
+  .tab {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 26px;
+    flex: none;
+    position: relative;
+    padding: 4px 0;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      .line {
+        display: block;
+      }
+      Text {
+        color: #3370ff;
+      }
+    }
+    Text {
+      font-size: 14px;
+      font-weight: 400;
+      color: #141414;
+    }
+    .line {
+      display: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #3370ff;
+    }
+  }
+}
+
+.filterBox {
+  position: relative;
+  z-index: 10002;
+  flex: none;
+  .filterHeader {
+    padding: 12px 16px;
+    background: #fff;
+    box-shadow: 0px -1px 0px 0px #eee inset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10005;
+  }
+  .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 10001;
+  }
+  .filterCheckBox {
+    display: flex;
+    flex-flow: wrap;
+
+    .checkBox {
+      min-width: 35px;
+      min-height: 20px;
+      padding: 5px 15px;
+      margin: 10px 10px 5px 0;
+      border-radius: 15px;
+      font-size: 13px;
+      font-weight: 400;
+      background: #f1f1f1;
+
+      .extraWidth {
+        min-width: 50px;
+        height: 20px;
+        line-height: 20px;
+      }
+
+      &.active {
+        background: #ebf1ff;
+        font-weight: 600;
+        color: #3370ff;
+      }
+    }
+  }
+  .filterFormBox {
+    position: absolute;
+    z-index: 10005;
+    width: 100vw;
+    flex: auto;
+    min-height: 94px;
+    background-color: #ffffff;
+  }
+  .formFooter {
+    display: flex;
+    .reset,
+    .submit {
+      flex: 1;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .reset {
+      background: #ebf1ff;
+      color: #3370ff;
+    }
+    .submit {
+      background: #3370ff;
+      color: #ffffff;
+    }
+  }
+}

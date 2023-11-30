@@ -1,0 +1,9 @@
+<svg width="1em" height="1em" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+    <g id="登录/密码/睁开" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+            <path d="M8,3.5 C5.4631877,3.5 3.16324247,4.83333317 0.851899845,8.30654337 C3.00275224,11.0779975 5.37567924,12.5 8,12.5 C10.5368123,12.5 12.8367575,11.1666668 15.1481002,7.69345663 C12.9972478,4.9220025 10.6243208,3.5 8,3.5 Z" id="椭圆形" stroke="#6A6B72"></path>
+            <circle id="椭圆形" stroke="#6A6B72" cx="8" cy="8" r="1.5"></circle>
+        </g>
+    </g>
+</svg>

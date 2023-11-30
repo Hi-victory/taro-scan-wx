@@ -1,0 +1,21 @@
+.filterText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
+  display: flex;
+  align-items: center;
+  flex: none;
+  .filterIcon {
+    width: 12px;
+    height: 12px;
+    transition: all 0.3s;
+    margin-left: 4px;
+    &.show {
+      transform: rotate(-180deg);
+    }
+  }
+  &.active {
+    color: #3370ff;
+  }
+}

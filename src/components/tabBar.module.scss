@@ -1,0 +1,66 @@
+.box {
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10000;
+  width: 100vw;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: #fff;
+  .bg {
+    width: 100vw;
+    height: 90px;
+    position: absolute;
+    left: 0;
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+    z-index: -1;
+  }
+  .menuBg {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 30px;
+  }
+  .menu {
+    height: 100%;
+    width: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      width: 24px;
+      height: 24px;
+      color: #bfbfbf;
+    }
+    .name {
+      font-size: 10px;
+      font-weight: 510;
+      color: #bfbfbf;
+    }
+    &.active {
+      .icon,
+      .name {
+        color: #3370ff;
+      }
+    }
+  }
+  .scanBg {
+    position: relative;
+    top: -5px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #3370ff 0%, #5084ff 100%);
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

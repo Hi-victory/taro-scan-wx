@@ -1,0 +1,67 @@
+.info {
+  display: flex;
+
+  .avatar {
+    margin-right: 12px;
+  }
+
+  .right {
+    .top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+
+      .name {
+        font-size: 16px;
+        font-weight: 510;
+        max-width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .infoLine {
+        margin: 0 8px;
+        width: 1px;
+        height: 12px;
+        background-color: #d9d9d9;
+      }
+
+      .role {
+        color: #8c8c8c;
+        font-size: 14px;
+        width: 150px;
+        white-space: nowrap;
+        overflow: auto;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      align-items: center;
+
+      .text {
+        color: #8c8c8c;
+        font-size: 14px;
+      }
+
+      .craftArea {
+        display: flex;
+        width: 200px;
+        white-space: nowrap;
+        overflow: auto;
+        text-overflow: ellipsis;
+        .craft {
+          border-radius: 12px;
+          border: 1px solid #d9d9d9;
+          background: #fafafa;
+          padding: 1px 8px;
+          margin-right: 4px;
+          white-space: nowrap;
+          color: (0, 0, 0, 0.85);
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

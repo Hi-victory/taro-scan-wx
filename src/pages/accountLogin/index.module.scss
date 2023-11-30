@@ -1,0 +1,103 @@
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0 32px 0;
+  border-top: 1px solid #f0f0f0;
+  .logo {
+    width: 201px;
+    height: 119px;
+  }
+}
+.loginBox {
+  padding: 0 16px;
+  .account,
+  .captcha {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    Input {
+      flex: auto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #141414;
+    }
+    .icon,
+    .eyes {
+      flex: none;
+    }
+  }
+  .account {
+    .icon {
+      width: 15px;
+      height: 16px;
+    }
+    Input {
+      padding: 0px 16px;
+    }
+  }
+  .captcha {
+    padding-top: 11px;
+    .icon,
+    .eyes {
+      width: 16px;
+      height: 16px;
+    }
+    Input {
+      padding: 0 16px;
+    }
+    .button {
+      padding: 4px 12px;
+      border-radius: 4px;
+      background: #3370ff;
+      font-size: 14px;
+      line-height: 22px;
+      color: #fff;
+      word-break: break-all;
+      white-space: nowrap;
+      &.disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+  .submit {
+    padding: 33px 0 0;
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3370ff;
+      height: 48px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      border-radius: 4px;
+      &.disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+  .agreement {
+    padding-top: 12px;
+  }
+}
+.footer {
+  padding: 0 38px 34px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #8c8c8c;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+.warp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .children {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    padding-left: 8px;
+  }
+}
+.box {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  &.checked {
+    border: none;
+    background: #3370ff;
+    .tick {
+      width: 10px;
+      height: 6px;
+      border-left: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: 3.5px;
+      top: 4px;
+    }
+  }
+  .square {
+    width: 8px;
+    height: 8px;
+    background: #3370ff;
+  }
+  &.disabled {
+    background: rgba(0,0,0,0.04);
+  }
+}

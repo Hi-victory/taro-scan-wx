@@ -1,0 +1,116 @@
+.body {
+  .logItem {
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+
+    .logItemHead {
+      padding: 8px 16px 0px;
+      background-color: #fff;
+
+      .headContent {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        .date {
+          color: #8C8C8C;
+          font-size: 14px;
+        }
+
+        .countArea {
+          display: flex;
+          align-items: center;
+
+          .count {
+            font-size: 14px;
+            font-weight: 510;
+          }
+
+          .line {
+            margin: 0px 8px;
+            width: 1px;
+            height: 10px;
+            background-color: #D9D9D9;
+          }
+        }
+      }
+
+      .headLine {
+        width: 100%;
+        height: 0.5px;
+        border-bottom: 0.5px dashed #D9D9D9;
+      }
+    }
+
+    .task {
+      width: 100vw;
+      padding: 12px 16px;
+      background: #fff;
+
+      .title {
+        display: flex;
+        align-items: center;
+        height: 24px;
+
+        .name {
+          color: #141414;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .line {
+          width: 1px;
+          height: 12px;
+          background: #d9d9d9;
+          margin: 0 8px;
+        }
+
+        .mark {
+          max-width: 135px;
+          white-space: nowrap;
+          overflow: auto;
+          border-radius: 12px;
+          border: 1px solid #d9d9d9;
+          background: #fafafa;
+          padding: 1px 8px;
+          margin-right: 4px;
+          white-space: nowrap;
+          color: (0, 0, 0, 0.85);
+          font-size: 14px;
+        }
+      }
+
+      .text {
+        display: flex;
+        color: #8c8c8c;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 4px;
+        line-height: 22px;
+
+        .value {
+          max-width: 220px;
+          white-space: nowrap;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+
+.back {
+  color: #141414;
+}
+
+.green {
+  color: #32BC24;
+}
+
+.orange {
+  color: #FAAD14;
+}
+
+.grey {
+  color: rgba(0, 0, 0, 0.25);
+}

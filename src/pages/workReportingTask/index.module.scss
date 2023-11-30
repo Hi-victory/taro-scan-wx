@@ -1,0 +1,93 @@
+.box {
+  width: 100vw;
+  height: 100vh;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.content {
+  flex: auto;
+  overflow: hidden;
+  padding-bottom: calc(60px + constant(safe-area-inset-bottom));
+  padding-bottom: calc(60px + env(safe-area-inset-bottom));
+}
+.scrollArea {
+  height: 100%;
+}
+.task {
+  width: 100vw;
+  margin-top: 4px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f5f5f5;
+  background: #fff;
+  .title {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    .name {
+      color: #141414;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .line {
+      width: 1px;
+      height: 12px;
+      background: #d9d9d9;
+      margin: 0 8px;
+    }
+    .mark {
+      max-width: 135px;
+      white-space: nowrap;
+      overflow: auto;
+      border-radius: 12px;
+      border: 1px solid #d9d9d9;
+      background: #fafafa;
+      padding: 1px 8px;
+      margin-right: 4px;
+      color: (0, 0, 0, 0.85);
+      font-size: 14px;
+    }
+  }
+  .text {
+    display: flex;
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 4px;
+    line-height: 22px;
+
+    .value {
+      max-width: 245px;
+      white-space: nowrap;
+      overflow: auto;
+    }
+    .max150 {
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: auto;
+    }
+
+    .blue {
+      color: #3370ff;
+      font-weight: 700;
+    }
+  }
+  .buttonBox {
+    padding-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    .button {
+      width: 60px;
+      height: 30px;
+      border-radius: 4px;
+      background: #3370ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
